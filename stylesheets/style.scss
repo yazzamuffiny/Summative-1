@@ -1,0 +1,476 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+//variables
+$primary-color: #cc9f3c;
+$secondary-color: #3d0b37;
+$primary-font-color: white;
+$header-font: 'Open Sans';
+$body-font: 'Lora';
+
+// global reset
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//end global reset
+
+
+
+//global page rules (or just more than one page)
+
+//background
+body{
+    background-image: url(../imgs/bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Lora';
+}
+//end background
+
+//top nav bar
+header {
+    width: 100%;
+    background-color: $secondary-color;
+    padding: 0 20px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    .nav-items {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        a, p, i {
+            color: $primary-font-color;
+            text-decoration: none;
+            font-size: 2rem;
+        }
+        p {
+            font-family: $header-font;
+        }
+        #closeCart {
+            display: none;
+        }
+        .cart {
+            display: none;
+            // pop out looks
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 50px;
+            right: 0px;
+            width: 25%;
+            height: calc(100vh - 50px);
+            background-color: rgb(255, 255, 255);
+            p {
+                color: black;
+                margin: 10px;
+                font-size: 3rem;
+                font-family: $header-font;
+            }
+            a {
+                width: 50%;
+                padding: 10px 20px;
+                font-size: 2rem;
+                font-family: $header-font;
+                border: 5px solid $secondary-color;
+                text-decoration: none;
+                color: black;
+                text-align: center;
+            }
+        }
+    }
+}
+//end top nav bar
+
+//menu selection buttons
+.menu-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 80px;
+    a {
+        min-width: 275px;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.75);
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        border: 5px solid $primary-color;
+        border-radius: 10px;
+        font-family: $header-font;
+    }
+    .menu-active{
+        color: $primary-font-color; 
+        background-color: #cc9f3c;      
+    }
+}
+//end menu buttons
+
+//footer
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: $secondary-color;
+    color: $primary-font-color;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    p {
+        font-family: $header-font;
+    }
+}
+
+.welcome-footer {
+    justify-content: center;
+}
+
+.main-footer{
+    display: flex;
+    justify-content: space-between;
+    .footer-left {
+        margin-left: 40px;
+        a{
+            text-decoration: none;
+            color: $primary-font-color;
+            p {
+            
+                font-size: 1.5rem;
+                text-align: center;
+            }
+        }
+       
+    }
+    .footer-right {
+        margin-right: 40px;
+        p {
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+    .footer-middle {
+        a {
+            text-decoration: none;
+            color: $primary-font-color;
+            font-family: $header-font;
+            padding: 20px 30px;
+            background-color: $primary-color;
+            border-radius: 10px;
+        }
+    }
+}
+//end footer
+
+//menu pages (if i was doing more than one currently they would all use the same code)
+
+.page-header {
+    color: $primary-font-color;
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: $header-font;
+    text-align: center;
+}
+.menu-tabs {
+    display: flex;
+    justify-content: center;
+    a{
+        margin: 0 20px;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.75);
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        border: 5px solid $primary-color;
+        border-radius: 10px;
+        font-family: $header-font;
+    }
+}
+
+.menu-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    .menu-card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+        img {
+            width: 50%;
+            border: 2px solid white;
+        }
+        .menu-txt {
+            width: 250px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.75);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            a {
+                margin-top: 50px;
+                width: 60%;
+                text-align: center;
+                padding: 10px 20px;
+                color: $primary-font-color;
+                background-color: $primary-color;
+                text-decoration: none;
+                font-size: 1.5em;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+//end menu page stuff
+
+//modals
+dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .footer-popup {
+        background-color: white;
+        padding: 40px;
+        p, i {
+            color: black;
+        }
+        .popup-main{
+            font-size: 3em;
+            font-family: $header-font;
+        }
+        #closeStaff {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+    }
+}
+
+.menu-dialog {
+    width: 30%;
+    i {
+        position: fixed;
+        top: 0;
+        right: 0;
+        padding: 10px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.518);
+    }
+    img {
+        width: 100%;
+    }
+    h3 {
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+    .item-ingrediants {
+        color: #3d0b37;
+        padding: 5px;
+    }
+    .item-description {
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    a {
+        margin-top: 10px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: white;
+        background-color: #cc9f3c;
+        text-decoration: none;
+        text-align: center;
+    }
+}
+
+
+
+//page specific
+
+//welcome page
+.welcome-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    color: $primary-font-color;
+    h3 {
+        font-size: 4rem;
+    }
+    h1 {
+        font-family: $header-font;
+        font-size: 8rem;
+    }
+    a {
+        font-size: 2em;
+        font-family: $header-font;
+        text-decoration: none;
+        padding: 20px 20px;
+        border: 5px solid $secondary-color;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.75);
+        color: black;
+    }
+}
+
+//table order or pick up page
+.table-page {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 250px;
+    .table-box {
+        display: flex;
+        flex-direction: column;
+        label {
+            color: $primary-font-color;
+            font-size:4rem;
+            font-family: $header-font;
+        }
+        input {
+            width: 150px;
+            height: 150px;
+            font-size: 1rem;
+            margin-left: 25%;
+            margin-bottom: 20px;
+        }
+        a {
+            margin-left: 25%;
+            width: 90px;
+            border: 5px solid $secondary-color;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.50);
+            text-align: center;
+            text-decoration: none;
+            color: #3d0b37;
+            font-size: 4rem;
+        }
+    }
+}
+
+//home page specials
+.specials-box { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 50px;
+    .specials-tile {
+        height: 35vh;
+        margin: 20px;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+        a {
+            text-decoration: none;
+        }
+        p {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 5em;
+            background-color: rgba(0, 0, 0, 0.70);
+            font-family: $header-font;
+        }
+    }
+    .deal {
+        background-image: url(../imgs/deal.jpg);
+    }
+    .cocktail {
+        background-image: url(../imgs/feat-tail.jpg);
+    }
+    .beer {
+        background-image: url(../imgs/guest-beer.jpg);
+    }
+    .dessert {
+        background-image: url(../imgs/feat-des.jpg);
+    }
+}
+
+
+//media queries
+
+@media screen and (max-width:768px) {
+
+    .main-footer {
+        .footer-middle {
+            a {
+                font-size: 1rem;
+            }
+        }
+    }
+    .menu-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 20px;
+        a {
+            min-width: 150px;
+            margin: 10px;
+        }
+    }
+    .menu-box {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .specials-box {
+        margin-bottom: 100px;
+        .specials-tile {
+            p {
+                font-size: 3em;
+            }
+        }
+    }
+    .table-page {
+        margin-top: 20px;
+        flex-direction: column;
+        margin-left: 10px;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .menu-buttons {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+        a {
+            min-width: 150px;
+        }
+    }
+    .menu-box {
+        grid-template-columns: 1fr;
+    }
+    .specials-box {
+        grid-template-columns: 1fr;
+    }
+    .main-footer {
+        .footer-left {
+            a{
+                p {
+                    font-size: 1rem;
+                }
+            }
+           
+        }
+        .footer-right {
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}

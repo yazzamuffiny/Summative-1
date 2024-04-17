@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <title>Library Bar</title>
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="nav-items">
+            <a href="./home.html"><i class="fa-solid fa-house"></i></a>
+            <p class="nav-header">LIBRARY</p>
+
+            <!-- pop out stuff -->
+            <i class="fa-solid fa-champagne-glasses" id="openCart"></i>
+            <i class="fa-solid fa-x" id="closeCart"></i>
+            <div class="cart" id="cart">
+                <p>CART</p>
+                <a href="#">PLACE ORDER</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- menu navigation buttons -->
+    <div class="menu-buttons">
+        <a href="./cocktails.html">COCKTAILS</a>
+        <a href="#">WINE</a>
+        <a href="#">CHAMPAGNE</a>
+        <a href="#">BEER</a>
+        <a href="#">SPIRITS</a>
+        <a href="#">NON-ALCOHOLIC</a>
+        <a href="#">FOOD</a>
+    </div>
+    <!-- end menu navigation -->
+
+    <!-- special tiles -->
+    <div class="specials-box">
+        <div class="specials-tile deal">
+            <a href="./cocktails.html"><p>$15 HOUSE FAVES</p></a>
+        </div>
+        <div class="specials-tile cocktail">
+            <p>FEATURED COCKTAIL</p>
+        </div>
+        <div class="specials-tile beer">
+            <p>GUEST TAP BEER</p>
+        </div>
+        <div class="specials-tile dessert">
+            <p>FEATURED DESSERT</p>
+        </div>
+    </div>
+    <!-- end special tiles -->
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="footer-left">
+            <a href="./index.html">
+                <p>Table Number
+                <br>
+                12
+                </p>
+            </a>
+        </div>
+        <div class="footer-middle">
+            <a href="#" id="openStaff">CALL STAFF TO TABLE</a>
+        </div>
+        <div class="footer-right">
+            <p>est wait time
+            <br>
+            10 mins
+            </p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+<!-- footer button pop up -->
+    <dialog id="modalStaff">
+        <div class="footer-popup">
+        <i class="fa-solid fa-x" id="closeStaff"></i>
+        <p class="popup-main">Our staff will be with you shortly</p>
+        <p class="popup-small">You may close this window</p>
+        </div>
+    </dialog>
+<!-- end pop ups -->
+
+    <!-- js links -->
+    <script src="https://kit.fontawesome.com/ff75b7e563.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <title>Library Bar</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="nav-items">
+            <a href="./home.html"><i class="fa-solid fa-house"></i></a>
+            <p class="nav-header">LIBRARY</p>
+
+            <!-- pop out stuff -->
+            <i class="fa-solid fa-champagne-glasses" id="openCart"></i>
+            <i class="fa-solid fa-x" id="closeCart"></i>
+            <div class="cart" id="cart">
+                <p>CART</p>
+                <a href="#">PLACE ORDER</a>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- meu navigation buttons -->
+    <div class="menu-buttons">
+        <a href="#" class="menu-active">COCKTAILS</a>
+        <a href="#">WINE</a>
+        <a href="#">CHAMPAGNE</a>
+        <a href="#">BEER</a>
+        <a href="#">SPIRITS</a>
+        <a href="#">NON-ALCOHOLIC</a>
+        <a href="#">FOOD</a>
+    </div>
+    <!-- end menu navigation buttons -->
+
+    <!-- cocktail header -->
+    <h2 class="page-header">COCKTAILS</h2>
+    <!-- cocktail buttons -->
+    <div class="menu-tabs">
+        <a href="#" id="faveButton">HOUSE FAVES</a>
+        <a href="#" id="luxButton">LUXURY</a>
+        <a href="#" id="mockButton">MOCKTAILS</a>
+    </div>
+    <!-- end cocktail buttons -->
+
+    <!-- house faves hide show box -->
+    <div class="menu-box" id="houseFaves">
+        <!-- item 1 -->
+        <div class="menu-card" id="openBlueberry">
+            <img src="./imgs/drinks/bluhillthrill.jpg" alt="Blueberry Hill Thrill">
+            <div class="menu-txt">
+                <h3>Blueberry Hill Thrill</h3>
+                <h3>$19</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 2 -->
+        <div class="menu-card" id="openPink">
+            <img src="./imgs/drinks/pink.jpg" alt="Pink Wednesday">
+            <div class="menu-txt">
+                <h3>Pink Wednesday</h3>
+                <h3>$18</h3>
+                <a href="#">ADD</a>
+            </div>
+            
+        </div>
+        <!--item 3 -->
+        <div class="menu-card" id="openGold">
+            <img src="./imgs/drinks/golddigger.jpg" alt="The Last Golddigger">
+            <div class="menu-txt">
+                <h3>The Last Golddigger</h3>
+                <h3>$20</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 4 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/belina.jpg" alt="Bellina Gomez">
+            <div class="menu-txt">
+                <h3>Bellina Gomez</h3>
+                <h3>$20</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 5 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/secret.jpg" alt="The Secret Life of Bees">
+            <div class="menu-txt">
+                <h3>The Secret Life of Bees</h3>
+                <h3>$20</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 6 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/bobby.jpg" alt="Bobby Burns Smoko">
+            <div class="menu-txt">
+                <h3>Bobby Burns Smoko</h3>
+                <h3>$21</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 7 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/rain.jpg" alt="Getting Caught in the Rain">
+            <div class="menu-txt">
+                <h3>Getting Caught in the Rain</h3>
+                <h3>$21</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 8 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/caution.jpg" alt="A Cautionary Note">
+            <div class="menu-txt">
+                <h3>A Cautionary Note</h3>
+                <h3>$20</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+    </div>
+    <!-- end house faves hide show box -->
+
+    <!-- luxury hide show box -->
+    <div class="menu-box" id="luxury">
+        <!-- item 1 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/fire.jpg" alt="Fire and Blood">
+            <div class="menu-txt">
+                <h3>Fire and Blood</h3>
+                <h3>$24</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 2 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/holywater.jpg" alt="Falling Holy Water">
+            <div class="menu-txt">
+                <h3>Falling Holy Water</h3>
+                <h3>$23</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!--item 3 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/barbie.jpg" alt="Malibu Barbie Princess">
+            <div class="menu-txt">
+                <h3>Malibu Barbie Princess</h3>
+                <h3>$23</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 4 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/martini.jpg" alt="Old Tom Bombadill Martini">
+            <div class="menu-txt">
+                <h3>Old Tom Bombadill Martini</h3>
+                <h3>$27</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 5 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/scanner.jpg" alt="The Scanner Darkly">
+            <div class="menu-txt">
+                <h3>The Scanner Darkly</h3>
+                <h3>$27</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 6 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/old.jpg" alt="The Old Testament">
+            <div class="menu-txt">
+                <h3>The Old Testament</h3>
+                <h3>$24</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 7 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/upper.jpg" alt="Upper Hutt Lime Custard Tart">
+            <div class="menu-txt">
+                <h3>Upper Hutt Lime Custard Tart</h3>
+                <h3>$28</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 8 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/ginger.jpg" alt="Ginger Kiss">
+            <div class="menu-txt">
+                <h3>Ginger Kiss</h3>
+                <h3>$22</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 9 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/rome.jpg" alt="To Rome With Love">
+            <div class="menu-txt">
+                <h3>To Rome With Love</h3>
+                <h3>$28</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+    </div>
+    <!-- end luxury hide show box -->
+
+    <!-- mocktail hide show box -->
+    <div class="menu-box" id="mocktail">
+        <!-- item 1 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/blue.jpg" alt="Blue Lady">
+            <div class="menu-txt">
+                <h3>Blue Lady</h3>
+                <h3>$14</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 2 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/madonna.jpg" alt="Pre Madonna">
+            <div class="menu-txt">
+                <h3>Pre - Madonna</h3>
+                <h3>$10</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!--item 3 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/fig.jpg" alt="Figalicious">
+            <div class="menu-txt">
+                <h3>Figalicious</h3>
+                <h3>$12</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 4 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/nogold.jpg" alt="No Golddigging Here">
+            <div class="menu-txt">
+                <h3>No Golddigging here</h3>
+                <h3>$11</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 5 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/paloma.jpg" alt="Paloma Faith">
+            <div class="menu-txt">
+                <h3>Paloma Faith</h3>
+                <h3>$12</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+        <!-- item 6 -->
+        <div class="menu-card">
+            <img src="./imgs/drinks/hc.jpg" alt="The Old Testament">
+            <div class="menu-txt">
+                <h3>Library Signature Hot Chocolate</h3>
+                <h3>$9</h3>
+                <a href="#">ADD</a>
+            </div>
+        </div>
+    </div>
+    <!-- end mocktail hide show box -->
+
+
+
+
+    <!-- footer -->
+    <footer class="main-footer">
+        <div class="footer-left">
+            <a href="./index.html">
+                <p>Table Number
+                <br>
+                12
+                </p>
+            </a>
+        </div>
+        <div class="footer-middle">
+            <a href="#" id="openStaff">CALL STAFF TO TABLE</a>
+        </div>
+        <div class="footer-right">
+            <p>est wait time
+            <br>
+            10 mins
+            </p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- pop ups -->
+    <!-- menu popups -->
+    <dialog class="menu-dialog" id="modalBlueberry">
+        <div class="menu-popup">
+            <i class="fa-solid fa-x" id="closeBlueberry"></i>
+            <img src="./imgs/drinks/bluhillthrill.jpg" alt="Blueberry Hill Thrill">
+            <div class="popup-text">
+                <h3>Blueberry Hill Thrill $19</h3>
+                <p class="item-ingrediants">Orange infused vodka, house-made blueberry switchel, bitters, lime & soda
+                </p>
+                <p class="item-description">We've found our thrill! Inspired by the Fats Domino banger from 1956 a refreshingly fruity serenade that is bound to make anyone fall in love.'
+                </p>
+                <a href="#">ADD TO ORDER</a>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="menu-dialog" id="modalPink">
+        <div class="menu-popup">
+            <i class="fa-solid fa-x" id="closePink"></i>
+            <img src="./imgs/drinks/pink.jpg" alt="Pink Wednesday">
+            <div class="popup-text">
+                <h3>Pink Wednesday $18</h3>
+                <p class="item-ingrediants">Vanilla vodka, white chocolate liqueur,  raspberry & oat milk
+                </p>
+                <p class="item-description">"Why are you eating a Kalteen bar?"  'A cocktail that is, actually, guilt-free & won't  sabotage your spring fling'
+                </p>
+                <a href="#">ADD TO CART</a>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="menu-dialog" id="modalGold">
+        <div class="menu-popup">
+            <i class="fa-solid fa-x" id="closeGold"></i>
+            <img src="./imgs/drinks/golddigger.jpg" alt="The Last Golddigger">
+            <div class="popup-text">
+                <h3>The Last Golddigger $20</h3>
+                <p class="item-ingrediants">Cucumber tequila, watermelon syrup,  lemon & soda
+                </p>
+                <p class="item-description">'18 years, 18 years, this drink's been on the menu for 18 years! Improving your favourite with cucumber infused tequila, juicy watermelon & zesty lemon we've done just that.'
+                </p>
+                <a href="#">ADD TO CART</a>
+            </div>
+        </div>
+    </dialog>
+
+<!-- footer button pop up -->
+    <dialog id="modalStaff">
+        <div class="footer-popup">
+        <i class="fa-solid fa-x" id="closeStaff"></i>
+        <p class="popup-main">Our staff will be with you shortly</p>
+        <p class="popup-small">You may close this window</p>
+        </div>
+    </dialog>
+<!-- end pop ups -->
+
+
+    <!-- js links -->
+    <script src="https://kit.fontawesome.com/ff75b7e563.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="./menu.js"></script>
+</body>
+</html>

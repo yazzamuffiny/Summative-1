@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imgs/bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Lora";
+}
+
+header {
+  width: 100%;
+  background-color: #3d0b37;
+  padding: 0 20px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+}
+header .nav-items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .nav-items a, header .nav-items p, header .nav-items i {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+header .nav-items p {
+  font-family: "Open Sans";
+}
+header .nav-items #closeCart {
+  display: none;
+}
+header .nav-items .cart {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50px;
+  right: 0px;
+  width: 25%;
+  height: calc(100vh - 50px);
+  background-color: rgb(255, 255, 255);
+}
+header .nav-items .cart p {
+  color: black;
+  margin: 10px;
+  font-size: 3rem;
+  font-family: "Open Sans";
+}
+header .nav-items .cart a {
+  width: 50%;
+  padding: 10px 20px;
+  font-size: 2rem;
+  font-family: "Open Sans";
+  border: 5px solid #3d0b37;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.menu-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 80px;
+}
+.menu-buttons a {
+  min-width: 275px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  border: 5px solid #cc9f3c;
+  border-radius: 10px;
+  font-family: "Open Sans";
+}
+.menu-buttons .menu-active {
+  color: white;
+  background-color: #cc9f3c;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #3d0b37;
+  color: white;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+footer p {
+  font-family: "Open Sans";
+}
+
+.welcome-footer {
+  justify-content: center;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.main-footer .footer-left {
+  margin-left: 40px;
+}
+.main-footer .footer-left a {
+  text-decoration: none;
+  color: white;
+}
+.main-footer .footer-left a p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main-footer .footer-right {
+  margin-right: 40px;
+}
+.main-footer .footer-right p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.main-footer .footer-middle a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans";
+  padding: 20px 30px;
+  background-color: #cc9f3c;
+  border-radius: 10px;
+}
+
+.page-header {
+  color: white;
+  font-size: 6rem;
+  font-weight: 500;
+  font-family: "Open Sans";
+  text-align: center;
+}
+
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+}
+.menu-tabs a {
+  margin: 0 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  border: 5px solid #cc9f3c;
+  border-radius: 10px;
+  font-family: "Open Sans";
+}
+
+.menu-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 20px;
+  margin-bottom: 120px;
+}
+.menu-box .menu-card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+}
+.menu-box .menu-card img {
+  width: 50%;
+  border: 2px solid white;
+}
+.menu-box .menu-card .menu-txt {
+  width: 250px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-box .menu-card .menu-txt h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+.menu-box .menu-card .menu-txt a {
+  margin-top: 50px;
+  width: 60%;
+  text-align: center;
+  padding: 10px 20px;
+  color: white;
+  background-color: #cc9f3c;
+  text-decoration: none;
+  font-size: 1.5em;
+  border-radius: 10px;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+dialog .footer-popup {
+  background-color: white;
+  padding: 40px;
+}
+dialog .footer-popup p, dialog .footer-popup i {
+  color: black;
+}
+dialog .footer-popup .popup-main {
+  font-size: 3em;
+  font-family: "Open Sans";
+}
+dialog .footer-popup #closeStaff {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+}
+
+.menu-dialog {
+  width: 30%;
+}
+.menu-dialog i {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.518);
+}
+.menu-dialog img {
+  width: 100%;
+}
+.menu-dialog h3 {
+  font-size: 1.5rem;
+  padding: 5px 10px;
+}
+.menu-dialog .item-ingrediants {
+  color: #3d0b37;
+  padding: 5px;
+}
+.menu-dialog .item-description {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.menu-dialog a {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #cc9f3c;
+  text-decoration: none;
+  text-align: center;
+}
+
+.welcome-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  color: white;
+}
+.welcome-header h3 {
+  font-size: 4rem;
+}
+.welcome-header h1 {
+  font-family: "Open Sans";
+  font-size: 8rem;
+}
+.welcome-header a {
+  font-size: 2em;
+  font-family: "Open Sans";
+  text-decoration: none;
+  padding: 20px 20px;
+  border: 5px solid #3d0b37;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
+}
+
+.table-page {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 250px;
+}
+.table-page .table-box {
+  display: flex;
+  flex-direction: column;
+}
+.table-page .table-box label {
+  color: white;
+  font-size: 4rem;
+  font-family: "Open Sans";
+}
+.table-page .table-box input {
+  width: 150px;
+  height: 150px;
+  font-size: 1rem;
+  margin-left: 25%;
+  margin-bottom: 20px;
+}
+.table-page .table-box a {
+  margin-left: 25%;
+  width: 90px;
+  border: 5px solid #3d0b37;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  text-decoration: none;
+  color: #3d0b37;
+  font-size: 4rem;
+}
+
+.specials-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 50px;
+}
+.specials-box .specials-tile {
+  height: 35vh;
+  margin: 20px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
+.specials-box .specials-tile a {
+  text-decoration: none;
+}
+.specials-box .specials-tile p {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 5em;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-family: "Open Sans";
+}
+.specials-box .deal {
+  background-image: url(../imgs/deal.jpg);
+}
+.specials-box .cocktail {
+  background-image: url(../imgs/feat-tail.jpg);
+}
+.specials-box .beer {
+  background-image: url(../imgs/guest-beer.jpg);
+}
+.specials-box .dessert {
+  background-image: url(../imgs/feat-des.jpg);
+}
+
+@media screen and (max-width: 768px) {
+  .main-footer .footer-middle a {
+    font-size: 1rem;
+  }
+  .menu-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 20px;
+  }
+  .menu-buttons a {
+    min-width: 150px;
+    margin: 10px;
+  }
+  .menu-box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .specials-box {
+    margin-bottom: 100px;
+  }
+  .specials-box .specials-tile p {
+    font-size: 3em;
+  }
+  .table-page {
+    margin-top: 20px;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu-buttons {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+  .menu-buttons a {
+    min-width: 150px;
+  }
+  .menu-box {
+    grid-template-columns: 1fr;
+  }
+  .specials-box {
+    grid-template-columns: 1fr;
+  }
+  .main-footer .footer-left a p {
+    font-size: 1rem;
+  }
+  .main-footer .footer-right p {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */
