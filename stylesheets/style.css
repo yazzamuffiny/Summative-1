@@ -74,7 +74,7 @@ header .nav-items .cart a {
   margin: 10px 80px;
 }
 .menu-buttons a {
-  min-width: 275px;
+  min-width: 250px;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
@@ -181,6 +181,7 @@ footer p {
 }
 .menu-box .menu-card img {
   width: 50%;
+  height: auto;
   border: 2px solid white;
 }
 .menu-box .menu-card .menu-txt {
@@ -205,6 +206,10 @@ footer p {
   text-decoration: none;
   font-size: 1.5em;
   border-radius: 10px;
+}
+
+#luxury, #mocktail {
+  display: none;
 }
 
 dialog {
@@ -363,7 +368,7 @@ dialog .footer-popup #closeStaff {
   background-image: url(../imgs/feat-des.jpg);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .main-footer .footer-middle a {
     font-size: 1rem;
   }
@@ -377,7 +382,7 @@ dialog .footer-popup #closeStaff {
     margin: 10px;
   }
   .menu-box {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .specials-box {
     margin-bottom: 100px;
@@ -390,6 +395,9 @@ dialog .footer-popup #closeStaff {
     flex-direction: column;
     margin-left: 10px;
   }
+  .menu-dialog {
+    width: 70%;
+  }
 }
 @media screen and (max-width: 600px) {
   .menu-buttons {
@@ -399,9 +407,6 @@ dialog .footer-popup #closeStaff {
   }
   .menu-buttons a {
     min-width: 150px;
-  }
-  .menu-box {
-    grid-template-columns: 1fr;
   }
   .specials-box {
     grid-template-columns: 1fr;

@@ -94,7 +94,7 @@ header {
     justify-content: space-between;
     margin: 10px 80px;
     a {
-        min-width: 275px;
+        min-width: 250px;
         padding: 10px 20px;
         background-color: rgba(255, 255, 255, 0.75);
         text-align: center;
@@ -208,6 +208,7 @@ footer {
         margin: 10px;
         img {
             width: 50%;
+            height: auto;
             border: 2px solid white;
         }
         .menu-txt {
@@ -409,7 +410,7 @@ dialog {
 
 //media queries
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
 
     .main-footer {
         .footer-middle {
@@ -428,7 +429,7 @@ dialog {
         }
     }
     .menu-box {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .specials-box {
@@ -444,6 +445,9 @@ dialog {
         flex-direction: column;
         margin-left: 10px;
     }
+    .menu-dialog {
+        width: 70%;
+    }
 
 
 }
@@ -456,9 +460,6 @@ dialog {
         a {
             min-width: 150px;
         }
-    }
-    .menu-box {
-        grid-template-columns: 1fr;
     }
     .specials-box {
         grid-template-columns: 1fr;
