@@ -74,7 +74,7 @@ header .nav-items .cart a {
   margin: 10px 80px;
 }
 .menu-buttons a {
-  min-width: 250px;
+  min-width: 12%;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
@@ -167,6 +167,7 @@ footer p {
 
 .menu-box {
   display: grid;
+  gap: 10px;
   grid-template-columns: 1fr 1fr 1fr;
   width: 90%;
   margin-left: 5%;
@@ -276,7 +277,7 @@ dialog .footer-popup #closeStaff {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 300px;
+  margin-top: 10%;
   color: white;
 }
 .welcome-header h3 {
@@ -300,7 +301,7 @@ dialog .footer-popup #closeStaff {
 .table-page {
   display: flex;
   justify-content: space-around;
-  margin-top: 250px;
+  margin-top: 10%;
 }
 .table-page .table-box {
   display: flex;
